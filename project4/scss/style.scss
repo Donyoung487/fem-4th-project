@@ -1,0 +1,250 @@
+//primary
+$Light-red: hsl(0, 100%, 67%);
+$Orangey-yellow: hsl(39, 100%, 56%);
+$Green-teal:hsl(166, 100%, 37%);
+$Cobalt-blue: hsl(234, 85%, 45%);
+
+//background
+$Light-slate-blue:hsl(252, 100%, 67%);
+$Light-royal-blue:hsl(241, 81%, 54%);
+
+//circle
+$Violet-blue: hsla(256, 72%, 46%, 1);
+$Persian-blue: hsla(241, 72%, 46%, 0);
+
+//neutral
+$white: hsl(0, 0%, 100%);
+$pale-blue:hsl(221, 100%, 96%);
+$light-lavender:hsl(241, 100%, 89%);
+$dark-gray-blue:hsl(224, 30%, 27%);
+
+@font-face {
+    font-family:HankenGrotesk;
+    src: url(../fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-family:HankenGrotesk,sans-serif;
+    background-color: #333;
+}
+
+
+
+main{
+    background-color:$white;
+    max-width:375px;
+    margin:0px 50px 50px 50px;
+   
+}
+
+
+.sec{
+align-items: center;
+background-image:linear-gradient(0deg,$Light-royal-blue,$Light-slate-blue);
+height:100%;
+padding:2rem;
+border-radius:0px 0px 30px 30px;
+// margin:0px 30px 30px 30px;
+
+h1{
+    text-align:center;
+}
+
+.circle{
+  text-align: center;
+  border-radius:100%;
+  padding:2rem 0rem;
+  margin-left:25%;
+  margin-top:10%;
+  height:150px;
+  width:150px;
+    background-image:linear-gradient(180deg,$Violet-blue,$Persian-blue);
+
+    .l-num{
+        color:$white;
+        font-weight:900;
+        font-size:3.5rem;
+    }
+
+    .s-num{
+        color: $light-lavender;
+    }
+}
+}
+
+.f-h1{
+    color:$light-lavender;
+}
+
+.result-w-1{
+    text-align: center;
+    color:$white;
+    font-size:1.2rem ;
+    padding:10px;
+}
+
+.result-w-2{
+    text-align:center;
+    font-size:1rem ;
+    color:$light-lavender;
+}
+
+.summary{
+    background-color:$white;
+    align-items:center;
+    
+   
+}
+
+.summary-w{
+    padding:20px 20px 20px 20px;
+    color:$dark-gray-blue;
+    font-size:1.2rem ;
+    font-weight:900;
+
+}
+
+.categories{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    align-items: center;
+}
+
+.sec2{
+    padding:10px;
+    border-radius:5px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    width:90%;
+    
+}
+
+.c-score-light-red{
+    background-color: hsl(0, 100%, 67%,0.155);
+ color:$Light-red;
+}
+
+.c-score-orange-yellow{
+    background-color: hsl(39, 100%, 56%,0.155);
+    color:$Orangey-yellow;
+   
+}
+
+.c-score-green-teal{
+    background-color:hsl(166, 100%, 37%,0.155);
+    color:$Green-teal;
+}
+
+.c-score-cobalt-blue{
+    background-color: hsl(234, 85%, 45%,0.155);
+    color:$Cobalt-blue;
+}
+
+.category{
+    display:flex;
+  gap:1rem;
+}
+.bold{
+    color:#333;
+}
+
+.light{
+    color:#888;
+}
+
+.btn{
+    text-decoration:none;
+    font-size:1.2rem;
+    text-align:center;
+    display:block;
+    margin:0 auto;
+    margin-top:5px;
+    height:45px;
+    width:85%;
+    color:$white;
+    background-color:$dark-gray-blue;
+    border-radius:30px;
+    padding:10px;
+    margin-bottom:30px;
+}
+
+.btn:active{
+    background-image:linear-gradient(180deg,$Violet-blue,$Persian-blue);
+}
+
+@media(min-width: 40em){
+    body{
+        background-color:#4d47471e;
+    }
+    main{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:100%;
+        background-color:#fbf7f7;
+        max-width:1440px;  
+        margin:20px 20px 20px 20px; 
+        height:90vh; 
+        justify-content:center;
+    }
+
+    .sec{
+        margin:15px 0px 20px 100px;
+        border-radius:20px 20px 20px 20px;
+        height:84vh;
+        width:80%;
+    }
+
+    .circle{
+        position:relative;
+        left:30px;
+        border-radius:50%;
+    }
+
+    .result-w{
+        margin-top:50px;
+        text-align:center;
+    }
+
+    .result-w-1{
+        font-size:25px;
+    }
+
+    .result-w-2{
+        margin-top:20px;
+        font-size:1.2rem;
+    }
+
+    .summary{
+        background-color:#fbf7f7;
+        width:80%;
+        border-radius:0px 20px 20px 0px;
+        margin:20px 20px 20px 0px;
+        padding-top:20px;
+        border-right:1px solid#f6eeee;
+        border-top:1px solid #f6eeee;
+        border-bottom:1px solid #f6eeee;
+    }
+
+    .categories{
+        gap: 25px;
+    }
+
+    .sec2{
+        padding:20px;
+    }
+
+}
+
+
+
